@@ -1,0 +1,395 @@
+rating: function [times][
+    if? integer? times [ 
+        print render {!html
+            <p class='ql-align-right'>
+                <b>Valoración DELE Ahora</b>:<br>
+                |repeat {<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path class="clr-i-solid clr-i-solid-path-1" d="M34 16.78a2.22 2.22 0 0 0-1.29-4l-9-.34a.23.23 0 0 1-.2-.15l-3.11-8.4a2.22 2.22 0 0 0-4.17 0l-3.1 8.43a.23.23 0 0 1-.2.15l-9 .34a2.22 2.22 0 0 0-1.29 4l7.06 5.55a.23.23 0 0 1 .08.24l-2.43 8.61a2.22 2.22 0 0 0 3.38 2.45l7.46-5a.22.22 0 0 1 .25 0l7.46 5a2.2 2.2 0 0 0 2.55 0a2.2 2.2 0 0 0 .83-2.4l-2.45-8.64a.22.22 0 0 1 .08-.24z" fill="currentColor"/></svg>} times||repeat {<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path class="clr-i-outline clr-i-outline-path-1" d="M27.19 34a2.22 2.22 0 0 1-1.24-.38l-7.46-5a.22.22 0 0 0-.25 0l-7.46 5a2.22 2.22 0 0 1-3.38-2.41l2.45-8.64a.23.23 0 0 0-.08-.24l-7.06-5.55a2.22 2.22 0 0 1 1.29-4l9-.34a.23.23 0 0 0 .2-.15l3.1-8.43a2.22 2.22 0 0 1 4.17 0l3.1 8.43a.23.23 0 0 0 .2.15l9 .34a2.22 2.22 0 0 1 1.29 4L27 22.33a.22.22 0 0 0-.08.24l2.45 8.64A2.23 2.23 0 0 1 27.19 34zm-8.82-7.42a2.21 2.21 0 0 1 1.23.42l7.46 5a.22.22 0 0 0 .34-.25l-2.45-8.64a2.21 2.21 0 0 1 .77-2.35l7.06-5.55a.22.22 0 0 0-.13-.4l-9-.34a2.22 2.22 0 0 1-2-1.46l-3.1-8.43a.22.22 0 0 0-.42 0L15.06 13a2.22 2.22 0 0 1-2 1.46l-9 .34a.22.22 0 0 0-.13.4L11 20.76a2.22 2.22 0 0 1 .77 2.35l-2.44 8.64a.21.21 0 0 0 .08.24a.2.2 0 0 0 .26 0l7.46-5a2.22 2.22 0 0 1 1.23-.37z" fill="currentColor"/></svg>} 5-times|
+            </p>
+        }
+    ]
+    else [
+        itimes: to :integer floor times
+        print render {!html
+            <p class='ql-align-right'>
+                <b>Valoración DELE Ahora</b>:<br>
+                |repeat {<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path class="clr-i-solid clr-i-solid-path-1" d="M34 16.78a2.22 2.22 0 0 0-1.29-4l-9-.34a.23.23 0 0 1-.2-.15l-3.11-8.4a2.22 2.22 0 0 0-4.17 0l-3.1 8.43a.23.23 0 0 1-.2.15l-9 .34a2.22 2.22 0 0 0-1.29 4l7.06 5.55a.23.23 0 0 1 .08.24l-2.43 8.61a2.22 2.22 0 0 0 3.38 2.45l7.46-5a.22.22 0 0 1 .25 0l7.46 5a2.2 2.2 0 0 0 2.55 0a2.2 2.2 0 0 0 .83-2.4l-2.45-8.64a.22.22 0 0 1 .08-.24z" fill="currentColor"/></svg>} itimes|<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path class="clr-i-solid clr-i-solid-path-1" d="M34 16.78a2.22 2.22 0 0 0-1.29-4l-9-.34a.23.23 0 0 1-.2-.15l-3.11-8.4a2.22 2.22 0 0 0-4.17 0l-3.1 8.43a.23.23 0 0 1-.2.15l-9 .34a2.22 2.22 0 0 0-1.29 4l7.06 5.55a.23.23 0 0 1 .08.24l-2.43 8.61a2.22 2.22 0 0 0 3.38 2.45l7.46-5a.22.22 0 0 1 .25 0l7.46 5a2.2 2.2 0 0 0 2.55 0a2.2 2.2 0 0 0 .83-2.4l-2.45-8.64a.22.22 0 0 1 .08-.24zm-9.1 6.33l2.45 8.64A.22.22 0 0 1 27 32l-7.46-5a2.21 2.21 0 0 0-1.24-.38V4.44a.2.2 0 0 1 .21.15L21.62 13a2.22 2.22 0 0 0 2 1.46l9 .34a.22.22 0 0 1 .13.4l-7.06 5.55a2.21 2.21 0 0 0-.79 2.36z" fill="currentColor"/></svg>|repeat {<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path class="clr-i-outline clr-i-outline-path-1" d="M27.19 34a2.22 2.22 0 0 1-1.24-.38l-7.46-5a.22.22 0 0 0-.25 0l-7.46 5a2.22 2.22 0 0 1-3.38-2.41l2.45-8.64a.23.23 0 0 0-.08-.24l-7.06-5.55a2.22 2.22 0 0 1 1.29-4l9-.34a.23.23 0 0 0 .2-.15l3.1-8.43a2.22 2.22 0 0 1 4.17 0l3.1 8.43a.23.23 0 0 0 .2.15l9 .34a2.22 2.22 0 0 1 1.29 4L27 22.33a.22.22 0 0 0-.08.24l2.45 8.64A2.23 2.23 0 0 1 27.19 34zm-8.82-7.42a2.21 2.21 0 0 1 1.23.42l7.46 5a.22.22 0 0 0 .34-.25l-2.45-8.64a2.21 2.21 0 0 1 .77-2.35l7.06-5.55a.22.22 0 0 0-.13-.4l-9-.34a2.22 2.22 0 0 1-2-1.46l-3.1-8.43a.22.22 0 0 0-.42 0L15.06 13a2.22 2.22 0 0 1-2 1.46l-9 .34a.22.22 0 0 0-.13.4L11 20.76a2.22 2.22 0 0 1 .77 2.35l-2.44 8.64a.21.21 0 0 0 .08.24a.2.2 0 0 0 .26 0l7.46-5a2.22 2.22 0 0 1 1.23-.37z" fill="currentColor"/></svg>} dec 5-itimes|
+            </p>
+        }
+    ]
+]
+
+bigHeader: function [ttl][
+    print render {!html
+        <h1 style='text-align:center'>
+            <b>|ttl|</b>
+        </h1>
+    }
+]
+
+horizline: function [z][
+    st: ""
+    if not? null? attr 'thick -> st: "thick"
+    print ~"<hr class='|st|'>"
+]
+
+blockquote: function [text][
+    newt: new text
+    newt: replace.regex newt {###([^#]+)\[([^\]]+)\]} "<span style='$1'>$2</span>"
+    print "<blockquote class='without-margin'>" ++ (join.with:"<br>" split.lines newt) ++ "</blockquote>"
+]
+
+feather: function [icon][
+    read ~"public/icons/feather/|icon|.svg"
+]
+
+iconheader: function [ic,hdr][
+    print ~{<div style="display:flex"><img src="https://cdn.deleahora.com/assets/images/placeh.svg" data-src="https://cdn.deleahora.com/icons/feather/|ic|.svg" class='lazyload' alt='|hdr|' style="margin:inherit !important"><h2 style="margin-left:0.5rem !important">|hdr|</h2></div>}
+]
+
+part: function [what,shape][
+    cl: ~"column diagram-part |shape|"
+
+    if not? null? attr 'bold -> cl: cl ++ " bold"
+    if not? null? attr 'italic -> cl: cl ++ " italic"
+    if not? null? attr 'transparent -> cl: cl ++ " transparent"
+    if not? null? attr 'big -> cl: cl ++ " big"
+
+    result: render {!html <div class="|cl|">|what|</div>}
+    if not? null? attr 'simple -> result: what
+
+    print result
+]
+
+columns: function [str][
+    lines: split.lines str
+    nof: 1
+    if not? null? attr 'one -> nof: 1
+    if not? null? attr 'two -> nof: 2
+    if not? null? attr 'three -> nof: 3
+
+    style: ""
+    if not? null? attr 'tags -> style: "special-tagged"
+    if not? null? attr 'dots -> style: "special-dotted"
+    if not? null? attr 'chevron -> style: "special-chevron"
+    if not? null? attr 'triple -> style: "special-triple"
+
+    sliceSize: (size lines)/nof
+    if and? odd? size lines 0<>(size lines)%nof -> sliceSize: sliceSize + 1
+
+    print {!html <div class="columns unbreakable">}
+    poz: 0
+    do.times:nof [
+        taken: new 0
+        print render {!html <div class="column"><ul class="|style|">}
+        while [and? taken < sliceSize (poz + taken) < size lines][
+            print render {!html <li>|replace replace read.markdown get lines poz + taken "<p>" "" "</p>" ""|</li>}
+            taken: taken + 1
+        ]
+        poz: poz + taken
+        print {!html </ul></div>}
+    ]
+    print {!html </div>}
+]
+
+illustration: function [caption,illustr][
+    illustrationPath: replace replace illustr " " "%20" "public/" "/"
+    cl: "width: 50%;"
+    if not? null? attr 'half -> cl: "width: 50%;"
+    filtered: attr 'filter
+    if not? null? filtered -> cl: cl ++ ~"filter: |filtered|;"
+    print render {!html
+        <div class="has-text-centered">
+            <img src="https://cdn.deleahora.com/assets/images/placeh.svg" data-src="|illustrationPath|" class='lazyload' alt='|caption|' style="|cl|">
+        </div>
+    }
+]
+
+plus: function [][part feather "plus" "separator"]
+arrowRight: function [][part feather "arrow-right" "separator"]
+arrowRightCircle: function [][part feather "arrow-right-circle" "separator"]
+arrowLeft: function [][part feather "arrow-left" "separator"]
+arrowLeftCircle: function [][part feather "arrow-left-circle" "separator"]
+arrowDown: function [][part feather "arrow-down" "separator"]
+bigArrowDown: function [][part .big feather "arrow-down" "separator"]
+arrowDownCircle: function [][part feather "arrow-down-circle" "separator"]
+bigArrowDownCircle: function [][part .big feather "arrow-down-circle" "separator"]
+arrowUp: function [][part feather "arrow-up" "separator"]
+arrowUpCircle: function [][part feather "arrow-up-circle" "separator"]
+
+ChevronRight: function [][part.simple feather "chevron-right" ""]
+chevronLeft: function [][part feather "chevron-left" "separator"]
+chevronDown: function [][part feather "chevron-down" "separator"]
+chevronUp: function [][part feather "chevron-up" "separator"]
+
+check: function [][part feather "check" "separator"]
+checkCircle: function [][part feather "check-circle" "separator"]
+checkSquare: function [][part feather "check-square" "separator"]
+
+error: function [][part feather "x" "separator"]
+errorCircle: function [][part feather "x-circle" "separator"]
+errorSquare: function [][part feather "x-square" "separator"]
+
+table: function [str][
+    lines: split.lines str
+    isCentered: not? null? attr 'centered
+    doCollapseFirst: not? null? attr 'collapseFirst
+    isBalanced: not? null? attr 'balanced
+
+    balanced: ""
+    if isBalanced ->
+        balanced: {!html style="table-layout: fixed;"}
+
+    if? isCentered ->
+        print ~{!html <div class='columns'><div class='column is-6 is-offset-3 has-text-centered'><table class='table is-bordered is-striped' |balanced|>}
+    else -> 
+        print ~{!html <table class='table is-bordered is-striped' |balanced|>}
+
+    header: attr 'withHeader
+    if not? null? header [
+        print "<thead>"
+        print {!html <tr>}
+        parts: split.by: "||" header
+        
+        loop.with:'xx parts 'pa [
+            if? and? xx=0 doCollapseFirst [
+                print render {!html <th class="is-hidden-mobile">|pa|</th>}
+            ]
+            else [
+                print render {!html <th>|pa|</th>}
+            ]
+        ]
+        print {!html </tr>}
+        print "</head>"
+    ]
+        
+    print "<tbody>"
+    loop lines 'line [
+        print {!html <tr>}
+        parts: split.by: "||" line
+        
+        loop.with:'xx parts 'pa [
+            internal: read.markdown replace pa "&amp;" "<br>"
+            if? and? xx=0 doCollapseFirst [
+                print render {!html <td class="is-hidden-mobile">|internal|</td>}
+            ]
+            else [
+                print render {!html <td>|internal|</td>}
+            ]
+        ]
+        print {!html </tr>}
+    ]
+    if? isCentered -> 
+        print {!html </tbody></table></div></div>}
+    else ->
+        print {!html </tbody></table>}
+]
+
+ornament: function [nu][
+    print {
+    <div class="has-text-centered">
+                    <img src="/assets/images/ornament.svg" data-src="/assets/images/ornament.svg" class=" ls-is-cached lazyloaded" style="width:70%; display: inline;" alt="aprender español con actividades online">
+    </div>
+    }
+]
+
+embedImage: function [img][
+    elemIdAttr: attr 'id
+    elemId: ""
+    if not? null? elemIdAttr -> elemId: ~{id="|elemIdAttr|"}
+
+    elemAltAttr: attr 'alt
+    elemAlt: ""
+    if not? null? elemAltAttr -> elemAlt: ~{alt="|elemAltAttr|"}
+
+    print ~{!html
+        <picture |elemId|>
+            <source srcset="https://cdn.deleahora.com/assets/custom/|img|.webp" type="image/webp">
+            <source srcset="https://cdn.deleahora.com/assets/custom/|img|.jpg" type="image/jpeg">
+            <img style="margin:0 !important" |elemAlt| src="https://cdn.deleahora.com/assets/custom/|img|.jpg">
+        </picture>
+    }
+]
+
+revealImage: function [id, withImage, text][
+    webpPath: ~"https://cdn.deleahora.com/assets/custom/|withImage|.webp"
+    jpgPath: ~"https://cdn.deleahora.com/assets/custom/|withImage|.jpg"
+    print ~{!html
+        <a class="common-link link-with-zoomin" href="" onclick="$($('#|id| source')[0]).attr('srcset','|webpPath|');$($('#|id| source')[1]).attr('srcset','|jpgPath|'); $('html,body').animate({scrollTop: $('#|id| img').offset().top - 83 - 20}, 500); return false;">|text|</a><br><br>
+    }
+]
+
+conjugate: function [verbs][
+    conjug: read.json "conjugation.json"
+    str: new ""
+
+    mood: "ind"
+    pronouns?: false
+    header?: false
+
+    perfect?: not? null? attr 'perfect
+
+    if not? null? attr 'indicative -> mood: "ind"
+    if not? null? attr 'subjunctive -> mood: "sub"
+    if not? null? attr 'participle -> mood: "par"
+    if not? null? attr 'imperative -> mood: "imp"
+    if not? null? attr 'pronouns -> pronouns?: true
+    if not? null? attr 'header -> header?: true
+
+    tense: "pre"
+    if not? null? attr 'present -> tense: "pre"
+    if not? null? attr 'past -> tense: "pst"
+    if not? null? attr 'imperfect -> tense: "ipf"
+    if not? null? attr 'future -> tense: "fut"
+    if not? null? attr 'conditional -> tense: "cnd"
+
+    trouble?: and? mood="sub" tense="pst"
+    imp?: and? mood="imp" tense="pre"
+
+    pronouns: ["yo", "tú", "el/ella/ud.", "nosotros", "vosotros", "ellos/ellas/uds."]
+    pronouns2: ["yo", "tú", "usted", "nosotros", "vosotros", "ustedes"]
+
+    header: ""
+    if header? [
+        if? pronouns? [
+            header: "||" ++ join.with:"||" map verbs 'verb [ to :string verb ]
+        ]
+        else [
+            header: join.with:"||" map verbs 'verb [ to :string verb ]
+        ]
+    ]
+
+    lines: []
+    conjugs: 
+        map verbs 'v [
+            verb: to :string v
+            if? not? perfect? [
+                if? imp? [
+                    map combine conjug\[verb]\[mood]\["aff"] conjug\[verb]\[mood]\["neg"] 'pair [
+                        (first pair) ++ " /<br>" ++ (last pair)
+                    ]
+                ]
+                else [
+                    if? trouble? [
+                        map combine conjug\[verb]\[mood]\[tense]\["-ra"] conjug\[verb]\[mood]\[tense]\["-se"] 'pair [
+                            (first pair) ++ " /<br>" ++ (last pair)
+                        ]
+                    ]
+                    else [
+                        conjug\[verb]\[mood]\[tense]
+                    ]
+                ]
+            ]
+            else [
+                haber: conjug\haber\[mood]\[tense]
+                parti: first conjug\[verb]\par\pst
+                map haber 'hab [
+                    (replace hab "/hay" "") ++ "<br>" ++ parti
+                ]
+            ]
+        ]
+
+    loop 0..(size first conjugs)-1 'i [
+        pr: ""
+        if pronouns? [
+            if? imp? [
+                pr: "<b>" ++ (pronouns2\[i+1]) ++ "</b>" ++ "||"
+            ]
+            else [
+                pr: "<b>" ++ (pronouns\[i]) ++ "</b>" ++ "||"
+            ]
+        ]
+        lines: lines ++ pr ++ (join.with:"||" map conjugs 'con -> con\[i])
+    ]
+    if? header="" [
+        if? pronouns? [
+            table.collapseFirst join.with:"\n" lines
+        ]
+        else [
+            table join.with:"\n" lines
+        ]
+    ]
+    else [
+        if? pronouns? [
+            table.collapseFirst.withHeader: header join.with:"\n" lines
+        ]
+        else [
+            table.withHeader: header join.with:"\n" lines
+        ]
+    ]
+]
+
+diagram: function [items][
+
+    text: function [X][part X ""]
+    square: function [X][part X "square"]
+    circle: function [X][part X "circle"]
+    triangle: function [X][part X "triangle"]
+    rhomboid: function [X][part X "rhomboid"]
+
+    plus: function [][part feather "plus" "separator"]
+    arrowRight: function [][part feather "arrow-right" "separator"]
+    arrowRightCircle: function [][part feather "arrow-right-circle" "separator"]
+    arrowLeft: function [][part feather "arrow-left" "separator"]
+    arrowLeftCircle: function [][part feather "arrow-left-circle" "separator"]
+    arrowDown: function [][part feather "arrow-down" "separator"]
+    bigArrowDown: function [][part .big feather "arrow-down" "separator"]
+    arrowDownCircle: function [][part feather "arrow-down-circle" "separator"]
+    bigArrowDownCircle: function [][part .big feather "arrow-down-circle" "separator"]
+    arrowUp: function [][part feather "arrow-up" "separator"]
+    arrowUpCircle: function [][part feather "arrow-up-circle" "separator"]
+
+    chevronRight: function [][part feather "chevron-right" "separator"]
+    chevronLeft: function [][part feather "chevron-left" "separator"]
+    chevronDown: function [][part feather "chevron-down" "separator"]
+    chevronUp: function [][part feather "chevron-up" "separator"]
+
+    check: function [][part feather "check" "separator"]
+    checkCircle: function [][part feather "check-circle" "separator"]
+    checkSquare: function [][part feather "check-square" "separator"]
+
+    error: function [][part feather "x" "separator"]
+    errorCircle: function [][part feather "x-circle" "separator"]
+    errorSquare: function [][part feather "x-square" "separator"]
+
+    tp: "is-mobile"
+    if not? null? attr 'vertical -> tp: "is-desktop"
+
+    print ~{!html <div class="columns |tp| is-vcentered diagram">}
+    do items
+    print {!html </div>}
+]
+
+hint: function [title, msg][
+    tp: "info"
+    ic: "info"
+    if not? null? attr 'warning [
+        tp: "warning"
+        ic: "alert-triangle"
+    ]
+
+    ttl: ""
+    if title <> "" [
+        ttl: ~"<h4>|title|</h4>"
+    ]
+    if? not? null? attr 'none [
+        print render {!html
+        <article class="message">
+                    <div class="message-body">
+                        |ttl|
+                        |replace read.markdown replace msg "@@" "\n" "<ul>" "<ul class='special-triple'>"|
+                    </div>
+                    </article>
+        }
+    ]
+    else [
+        print render {!html
+        <article class="message icon-msg |tp|-msg">
+                    <i>|feather ic|</i>
+                    <div class="message-body">
+                        |ttl|
+                        |replace read.markdown replace msg "@@" "\n" "<ul>" "<ul class='special-triple'>"|
+                    </div>
+                    </article>
+        }
+    ]
+]
